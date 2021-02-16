@@ -1,0 +1,69 @@
+body {
+    background-image: url("./Images/Background Image.jpg");
+    overflow: scroll;
+}
+
+form {
+    background-color: darkblue;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    grid-gap: 1em;
+    padding: 1em;
+    max-width: 30ch;
+    max-height: 80ch;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    }
+    
+input {
+    border: 1px solid silver;
+    display: block;
+    font-family: Helvetica, sans-serif;
+    font-weight: medium;
+    font-size: 12px;
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 100%;
+}
+
+label {
+    color: lightgreen
+}
+
+form button {
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    background-color: black;
+    border: 2px solid currentColor;
+    border-radius: .25em;
+    cursor: pointer;
+    font-size: inherit;
+    line-height: 1.4em;
+    padding: 0.25em 1em;
+    max-width: 20ch;
+}
+
+h1 {
+    color: darkred;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#nameDisplay {
+    font-family: Helvetica, sans-serif;
+    font-weight: medium;
+    font-size: 70px;
+    color: blue;
+    text-align: center;
+    margin-top: 230px;
+    background-color: greenyellow;
+}
