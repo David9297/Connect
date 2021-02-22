@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Your Gamer Name Generator</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1>Get Your Own Gamer Name Here!!!</h1>
+        <form method="POST" action="/formdata">
+            <label for="data">
+                First Name Initial
+                <input type="text" name="first_initial" value="First Initial">
+            </label>
+            <label for="data">
+                Last Name Initial
+                <input type="text" name="last_initial" value="Last Initial">
+            </label>
+            <label for="data">
+                Birthday Month
+                <input type="text" name="birth_month" value="Birth Month">
+            </label>
+            <label for="data">
+                Birthday Day
+                <input type="text" name="birth_date" value="Birth Date">
+            </label>
+            <button type="submit" id="submit-message" onclick="newName()">Submit</button>
+            <textarea name="longtext" cols="56" rows="10">
+            </textarea>
+        </form>
+        <script src="script.js"></script>
+</body>
+    </body>
+</html>

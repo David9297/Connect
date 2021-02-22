@@ -1,0 +1,35 @@
+<html>
+  <head>
+      <title>Your Gamer Name Generator</title>
+      <link href="style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+      <h1>This is your Gamer Name: </h1>
+
+     
+            <div id="nameDisplay"><a href="/displayrecord?_id=<%= data._id %>"><%= data.gamer_name%></a></div>
+     
+
+  <form method="POST" action="/formdata">
+      <label for="data">
+            First Name Initial
+            <input type="text" name="first_initial" value="First Initial">
+      </label>
+      <label for="data">
+            Last Name Initial
+            <input type="text" name="last_initial" value="Last Initial">
+      </label>
+      <label for="data">
+            Birthday Month
+            <input type="text" name="birth_month" value="Birth Month">
+      </label>
+      <label for="data">
+            Birthday Day
+            <input type="text" name="birth_date" value="Birth Date">
+      </label>
+        <button type="submit" id="submit-message">Submit</button>
+  </form>
+
+      <script src="script.js"></script>
+  </body>
+</html>
