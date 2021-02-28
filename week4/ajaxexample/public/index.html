@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Your Gamer Name Generator</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript">
+            var newGamers = 0;
+            var messages = null;
+            var submit = null;
+            var firstInitial = null;
+            var lastInitial = null;
+            var birthMonth = null;
+            var birthDate = null;
+            var gamerName = null;
+
+            window.addEventListener('load', function() {
+                messages = document.getElementById('messages');
+                submit = document.getElementById('submit');
+                submit.addEventListener('click', sendData);
+                firstInitial = document.getElementById('first_initial');
+                lastInitial = document.getElementById('last_initial');
+                birthMonth = document.getElementById('birth_month');
+                birthDate = document.getElementById('birth_date');
+                gamerName = document.getElementById(newName());
+            });
+
+            function sendData() {
+                newGamers++;
+                fetch('/formdata?first_initial='+firstInitial.value + "&last_initial=" + lastInitial.value + "&birth_month=" + birthMonth.value + "&birth_date=" + birthDate.value)
+                .then(response => response.json())
+                .then(data => populateMessages(data));
+            }
+
+            function populateMessages(newmessages) {
+                console.log(newmessages);
+                messages.innerHTML = "";
+                heading.innerHTML = "This is your Gamer Name: ";
+                for (var i = 0; i < newGamers; i++)
+                {
+                    messages.innerHTML = messages.innerHTML + newmessages[i].gamer_name + "<br />";
+                }
+            } 
+
+        </script>
+    </head>
+    <body>
+        <h1 id="heading">Get Your Own Gamer Name Here!!!</h1>
+        <div id="messages">
+        </div>
+        <form>
+            <label for="data">
+                First Name Initial
+                <input type="text" id="first_initial" name="first_initial" value="First Initial">
+            </label>
+            <label for="data">
+                Last Name Initial
+                <input type="text" id="last_initial" name="last_initial" value="Last Initial">
+            </label>
+            <label for="data">
+                Birthday Month
+                <input type="text" id="birth_month" name="birth_month" value="Birth Month">
+            </label>
+            <label for="data">
+                Birthday Day
+                <input type="text" id="birth_date" name="birth_date" value="Birth Date">
+            </label>
+            <button type="button" id="submit" onclick="newName()">Submit</button>
+        </form>
+        <script src="script.js"></script>
+</body>
+    </body>
+</html>
