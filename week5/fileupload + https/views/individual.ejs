@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title><%= data.text %></title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div class="logo">
+			<a href="index.html"><img src="Images/DigiCard Logo.png" alt="DigiCard Logo" title="DigiCard" width="350" height="350" align="center"/></a>
+		</div>
+
+		<hr/>
+        <br/>
+        
+        <h1 style="color: <%= data.color %>"><%= data.text %></h1>
+        <p>
+            <%= data.longtext %>
+        </p>
+
+        <img src="/uploads/<%= data.file.filename %>">
+
+        <pre>
+            <%= JSON.stringify(data.file); %>
+        </pre>
+    </body>
+</html>
