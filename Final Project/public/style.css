@@ -1,0 +1,372 @@
+body{
+background-image: url("./Images/Background Image.jpg");
+overflow: scroll;
+}
+
+.logo {
+overflow: scroll;
+}
+
+form {
+  background-color: #8cc859;
+  display: block;
+  font-family: Futura Std, sans-serif;
+  font-weight: medium;
+  font-size: 22px;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 40ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-family: Futura Std, sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 100%;
+}
+form button:hover {
+  background-color: green;
+}
+
+form button {
+  font-family: Futura Std, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  background-color: black;
+  border: 2px solid currentColor;
+  border-radius: .25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}
+
+li {
+  color: white;
+  font-family: Futura Std, sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  text-align: center;
+}
+
+h1{
+color: white;
+font-family:Futura Std, sans-serif;
+font-weight: medium;
+font-size: 120px;
+text-align: left;
+margin: 10px;
+padding: -40px;
+overflow: visible;
+margin-top: -180px;
+margin-left: 240px;
+overflow: visible;
+}
+
+img {
+align: center;
+overflow: visible;
+}
+
+h2 {
+color: #8cc859;;
+font-family: Futura Std, sans-serif;
+font-weight: Bold;
+font-size: 80px;
+text-align: center;
+overflow: visible;
+}
+
+h3 {
+color: #8cc859;;
+font-family: Futura Std, sans-serif;
+font-weight: medium;
+font-size: 50px;
+text-align: center;
+overflow: visible;
+}
+
+h4 {
+
+color: #8cc859;;
+font-family: Futura Std, sans-serif;
+font-weight: regular;
+font-size: 35px;
+text-align: center;
+overflow: visible;
+}
+
+h5 {
+
+color: #8cc859;;
+font-family: Futura Std, sans-serif;
+font-weight: Book;
+font-size: 28px;
+text-align: center;
+margin: 5px;
+margin-left: 670px;
+margin-top: 10px;
+display: block;
+width: 50px;
+overflow: visible;
+}
+
+
+p {
+color: white;
+font-family: Futura Std, sans-serif;
+font-weight: Book;
+font-size: 24px;
+text-align: center;
+margin: 40px;
+text-align: left;
+overflow: visible;
+}
+
+
+
+.Info p{
+display: block;
+vertical-align: middle;
+padding: 10px;
+line-height:30px;
+width: 200px;
+float: left;
+margin-right: 220px;
+overflow: visible;
+}
+
+.ATM img{
+
+margin: 40px;
+margin-top: -6px;
+overflow: visible;
+}
+
+.Mobile p{
+text-align: left;
+overflow: visible;
+}
+
+.Bank {
+float: left;
+}
+.Bank img {
+margin: 41px;
+overflow: visible;
+}
+
+.Mobile img {
+margin: 41px;
+overflow: visible;
+}
+
+.Card img {
+margin: 41px;
+margin-top: -5px;
+overflow: visible;
+}
+
+.Digi img {
+margin: 41px;
+margin-top: -5px;
+align: center;
+overflow: visible;
+}
+
+.Digi {
+float: right;
+margin-right: 150px;
+margin-top: -20px;
+}
+
+.Deal {
+float: center;
+margin-left: 240px;
+}
+
+.News {
+margin-left: 240px;
+}
+.logo{
+padding: 20px;
+
+margin: 60px;
+ position: relative;
+text-align: center;
+}
+
+.nav{
+overflow: scroll;
+}
+
+.nav ul {
+list-style: none;
+background-color: #8cc859;
+text-align: center;
+padding: 0;
+margin: 0;
+overflow: scroll;
+}
+.nav li {
+font-family: Futura Std, sans-serif;
+font-weight: medium;
+font-size: 36px;
+line-height: 40px;
+height: 50px;
+border-bottom: 1px solid #888;
+}
+
+.nav a {
+text-decoration: none;
+color: #fff;
+display: block;
+transition: .3s background-color;
+overflow: auto;
+}
+
+.nav a:hover {
+background-color: #0d763b;
+}
+
+.nav a.active {
+background-color: #0d763b;
+color: #444;
+cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+.nav li {
+  width: 280px;
+  border-bottom: none;
+  height: 50px;
+  line-height: 50px;
+  font-size: 36px;
+  overflow: auto;
+}
+
+/* Option 1 - Display Inline */
+.nav li {
+  display: inline-block;
+  margin-right: -4px;
+  overflow: hidden;
+}
+
+/* @media screen and (min-width: 600px) { */
+
+
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+margin-top: 40px;
+}
+
+.mySlides {
+display:none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+color: green;
+font-size: 30px;
+font-weight: bold;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor:pointer;
+height: 13px;
+width: 13px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+#header1 {
+font-family: Futura Std;
+font-weight: Bold;
+font-size: 60px;
+}
