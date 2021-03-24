@@ -2,8 +2,8 @@ var https = require('https');
 var fs = require('fs'); // Using the filesystem module
 
 var credentials = {
-  key: fs.readFileSync('my-key.pem'),
-  cert: fs.readFileSync('my-cert.pem')
+  key: fs.readFileSync('star_itp_io.key'),
+  cert: fs.readFileSync('star_itp_io.pem')
 };
 
 var datastore = require('nedb');
@@ -96,4 +96,4 @@ app.post('/newpage', function (req, res) {
 var httpsServer = https.createServer(credentials, app);
 
 // Default HTTPS Port
-httpsServer.listen(443);			
+httpsServer.listen(8443);			

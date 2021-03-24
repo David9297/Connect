@@ -1,12 +1,21 @@
 <html>
     <head>
         <title><%= data.title %></title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <h1><%= data.title %></h1>
+        <div class="logo">
+            <a href="/"><img src="Images/DigiCard Logo.png" alt="DigiCard Logo" title="DigiCard" width="350" height="350" align="center"/></a>
+        </div>
+
+        <!-- <h1><%= data.title %></h1> -->
         <p>
             <%- data.maincontent %>
         </p>
         <a href="/">Back</a>
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
     </body>
 </html>

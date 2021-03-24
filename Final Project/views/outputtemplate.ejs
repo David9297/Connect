@@ -1,37 +1,57 @@
 <html>
     <head>
-        <title>My Website</title>
+        <title>DigiCard</title>
+        <link href="style.css" type="text/css" rel="stylesheet"/>
     </head>
     <body>
-        <h1>My Pages 
+
+        <div class="logo">
+            <a href="/"><img src="Images/DigiCard Logo.png" alt="DigiCard Logo" title="DigiCard" width="350" height="350" align="center"/></a>
+        </div>
+
+        <hr/>
+
+        <h1>DigiCard Pages 
             <% if (typeof search != "undefined") { %>
                 Matching: <%= search %> | <%= (data.length) %> Results
             <% } %>
         </h1>
+
+        <div class="nav">
+            <ul>
         <% 
             if (data.length > 0) {
                 for (var i = 0; i < data.length; i++) { 
         %> 
-                    <div id="dataout<%= i %>"><a href="/displaypage?_id=<%= data[i]._id %>"><%= data[i].title %></a>
-                    
-                    <% if (editor) { %>
-                        | <a href="/newpage?_id=<%= data[i]._id %>">Edit</a> | <a href="/deletepage?_id=<%= data[i]._id %>">Delete</a>
+
+                    <li id="dataout<%= i %>"><a href="/displaypage?_id=<%= data[i]._id %>"><%= data[i].title %></a>
+
+                    <% if (typeof editor != "undefined") { %>
+                        <a class="editor" href="/newpage?_id=<%= data[i]._id %>">Edit</a> 
+                        <a class="editor" href="/deletepage?_id=<%= data[i]._id %>">Delete</a>
                     <% } %>
-                    </div>
+                    </li>
         <% 
                 } 
             }
         %>
-        <hr />
+        </ul>
+        </div>
         <div>
             Search 
             <form method="GET" action="/search">
                 <input type="text" name="q">
-                <input type="submit" value="Search for it">
+                <input type="submit" value="Search for Keyword">
             </form>
         </div>
         <% if (typeof search != "undefined") { %>
             <a href="/">Back</a>
         <% } %>
+        
+        <br/>
+        <hr/>
+        <br/>
+        <br/>
+
     </body>
 </html>
